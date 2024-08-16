@@ -28,7 +28,7 @@ app.use(cors(corsOptions));
 //api
 app.use("/api/v1/User", userRoute);
 app.use("/api/v1/Tweet", tweetRoute);
-app.use(express.static(path.join(__dirname,"/fe/x/build")));
+app.use(express.static(path.join(__dirname,"/fe/build")));
 app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"fe","x","build","index.html"));
 })
