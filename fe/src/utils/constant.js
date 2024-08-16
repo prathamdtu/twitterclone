@@ -1,5 +1,5 @@
-export const USER_API_END_POINT = "https://twitterclone-41qf.onrender.com/api/v1/User";
-export const TWEET_API_END_POINT = "https://twitterclone-41qf.onrender.com/api/v1/Tweet";
+export const USER_API_END_POINT = "https://twitterclone-xnic.onrender.com/api/v1/User";
+export const TWEET_API_END_POINT = "https://twitterclone-xnic.onrender.com/api/v1/Tweet";
 
 export const timeSince = (timestamp) =>{
     let time = Date.parse(timestamp);
