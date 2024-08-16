@@ -21,9 +21,10 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:"https://twitterclone-xnic.onrender.com",
-    credentials:true
-}
+  origin: "https://twitterclone-xnic.onrender.com",
+  credentials: true
+};
+
 app.use(cors(corsOptions));
 //api
 app.use("/api/v1/User", userRoute);
