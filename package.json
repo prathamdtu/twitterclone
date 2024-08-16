@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon be/index.js",
-    "build":"npm install && npm install --prefix fe/x && npm run build --prefix fe/x",
+    "build":"npm install && npm install --prefix fe && npm run build --prefix fe",
     "start":"nodemon be/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
