@@ -1,0 +1,31 @@
+/* Define light mode styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background: #007bff;
+    --button-text: #ffffff;
+}
+
+/* Define dark mode styles */
+[data-theme='dark'] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --button-background: #1f1f1f;
+    --button-text: #ffffff;
+}
+
+/* Apply CSS variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
